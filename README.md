@@ -11,3 +11,18 @@ Most of the images/audio/videos were taken from this google drive archive:
 >https://www.reddit.com/r/TUYU_official/comments/1dmkqpa/complete_tuyu_archive/
 
 Thank you for your understanding!
+
+# Keyboard Shortcuts
+
+Space - Play/Pause Song
+
+Left Arrow - Previous Song
+
+Right Arrow - Next Song
+
+R - Random Song
+
+C - Condensed MP3 Player
+
+H - Hide MP3 Player
+

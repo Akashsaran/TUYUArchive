@@ -249,6 +249,7 @@ const loadSong = (index) => {
   albumCover.src = song.cover;
   audio.src = song.src;
   backgroundVideo.src = song.video;
+  backgroundVideo.currentTime = 0;
 };
 
 const playSong = () => {
@@ -262,6 +263,14 @@ const pauseSong = () => {
   backgroundVideo.pause();
   isPlaying = false;
   playButton.innerHTML = '<i class="fas fa-play"></i>';
+};
+
+const randomSong = () => {
+  currentSongIndex = Math.floor(Math.random() * songs.length);
+  fadeOut(() => {
+    loadSong(currentSongIndex);
+    playSong();
+  });
 };
 
 const updateTimeline = () => {
@@ -324,11 +333,7 @@ nextButton.addEventListener("click", () => {
 timeline.addEventListener("click", seek);
 audio.addEventListener("timeupdate", updateTimeline);
 audio.addEventListener("ended", () => {
-  currentSongIndex = Math.floor(Math.random() * songs.length);
-  fadeOut(() => {
-    loadSong(currentSongIndex);
-    playSong();
-  });
+  randomSong();
 });
 
 loadSong(currentSongIndex);
@@ -336,7 +341,15 @@ loadSong(currentSongIndex);
 const togglePlayerElements = () => {
   albumCover.classList.toggle("hiddenspace");
   timeline.classList.toggle("hiddenspace");
-  controls.classList.toggle("hiddenspace");
+};
+
+const toggleAllPlayerElements = () => {
+  albumCover.classList.toggle("hiddenspace");
+  timeline.classList.toggle("hiddenspace");
+  playButton.classList.toggle("hiddenspace");
+  prevButton.classList.toggle("hiddenspace");
+  nextButton.classList.toggle("hiddenspace");
+  player.classList.toggle("hiddenspace");
 };
 
 // Key Presses LMAO
@@ -361,5 +374,9 @@ document.addEventListener("keydown", (event) => {
     } else {
       playSong();
     }
+  } else if (event.key === "h") {
+    toggleAllPlayerElements();
+  } else if (event.key === "r") {
+    randomSong();
   }
 });

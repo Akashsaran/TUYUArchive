@@ -305,7 +305,7 @@ const fadeOutShort = (callback) => {
   setTimeout(() => {
     callback();
     player.classList.remove("hidden");
-  }, 200);
+  }, 500);
 };
 
 playButton.addEventListener("click", () => {

@@ -29,9 +29,11 @@
         <div class="timeline-progress" id="timeline-progress"></div>
       </div>
       <div class="controls">
-        <button id="prev"><i class="fas fa-backward"></i></button>
-        <button id="play"><i class="fas fa-play"></i></button>
-        <button id="next"><i class="fas fa-forward"></i></button>
+        <button id="prev" data-tooltip="[<] Go to The Previous Song"><i class="fas fa-backward"></i></button>
+        <button id="random" data-tooltip="[R] Play a Random Song"><i class="fa-solid fa-repeat"></i></button>
+        <button id="play" data-tooltip="[Space] Play/Pause the Song"><i class="fas fa-play"></i></button>
+        <button id="repeat" data-tooltip="[L] Repeat the Current Song"><i class="fa-solid fa-rotate-right"></i></button>
+        <button id="next" data-tooltip="[>] Go to the Next Song"><i class="fas fa-forward"></i></button>
     </div>
       <audio id="audio"></audio>
     </div>

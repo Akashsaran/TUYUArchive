@@ -235,7 +235,9 @@ const albumCover = document.getElementById("album-cover");
 const audio = document.getElementById("audio");
 const backgroundVideo = document.getElementById("background-video");
 const playButton = document.getElementById("play");
+const randomButton = document.getElementById("random");
 const prevButton = document.getElementById("prev");
+const repeatButton = document.getElementById("repeat");
 const nextButton = document.getElementById("next");
 const timeline = document.getElementById("timeline");
 const timelineProgress = document.getElementById("timeline-progress");
@@ -330,6 +332,15 @@ nextButton.addEventListener("click", () => {
   });
 });
 
+randomButton.addEventListener("click", () => {
+  randomSong();
+});
+
+repeatButton.addEventListener("click", () => {
+  audio.currentTime = 0;
+  backgroundVideo.currentTime = 0;
+});
+
 timeline.addEventListener("click", seek);
 audio.addEventListener("timeupdate", updateTimeline);
 audio.addEventListener("ended", () => {
@@ -378,5 +389,21 @@ document.addEventListener("keydown", (event) => {
     toggleAllPlayerElements();
   } else if (event.key === "r") {
     randomSong();
+  } else if (event.key === "l") {
+    audio.currentTime = 0;
+    backgroundVideo.currentTime = 0;
   }
 });
+
+let hrElement;
+let counter = 50;
+
+for (let i = 0; i < counter; i++) {
+  hrElement = document.createElement("HR");
+  hrElement.style.left =
+    Math.floor(Math.random() * window.innerWidth * 1.5) - 50 + "px";
+  hrElement.style.animationDuration = 0.2 + Math.random() * 0.3 + "s";
+  hrElement.style.animationDelay = Math.random() * 5 + "s";
+
+  document.body.appendChild(hrElement);
+}

@@ -42,7 +42,7 @@ html {
   border: 3px solid rgba(28, 35, 51, 0.9);
   border-radius: 15px;
   transition: opacity 0.5s ease;
-  z-index: 3;
+  z-index: 6;
 }
 
 .song-title {
@@ -87,7 +87,7 @@ html {
 .controls button {
   background: rgba(28, 35, 51, 0.9);
   border: none;
-  width: 60px;
+  width: 50px;
   color: rgba(173, 215, 255, 0.9);
   padding: 10px 15px;
   font-size: 1rem;
@@ -101,6 +101,34 @@ html {
   color: rgba(28, 35, 51, 0.9);
 }
 
+.controls {
+  position: relative;
+}
+
+button[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 200%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(33, 43, 66, 0.9);
+  border: 3px solid rgba(28, 35, 51, 0.9);
+  color: rgba(173, 215, 255, 0.9);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+button[data-tooltip]:hover::after {
+  opacity: 1;
+  transition-delay: 1s;
+}
+
 .hidden {
   opacity: 0;
   pointer-events: none;
@@ -108,4 +136,33 @@ html {
 
 .hiddenspace {
   display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  width: 50px;
+  border-color: transparent;
+  border-right-color: rgba(255, 255, 255, 0.2);
+  border-right-width: 50px;
+  position: absolute;
+  bottom: 100%;
+  transform-origin: 100% 50%;
+  animation-name: rain;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: 5;
+}
+
+@keyframes rain {
+  from {
+    transform: rotate(105deg) translateX(0);
+  }
+  to {
+    transform: rotate(105deg) translateX(calc(100vh + 60px));
+  }
 }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TUYU Archive</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap" rel="stylesheet">
+</head>
+  </head>
+
+  <body>
+    <video class="video-background" id="background-video" muted loop>
+      <source src="placeholder.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="video-overlay"></div>
+
+    <div class="player-container" id="player">
+      <div class="song-title" id="song-title">Song Name</div>
+      <img
+        src="placeholder.jpg"
+        alt="Album Cover"
+        class="album-cover"
+        id="album-cover"
+      />
+      <div class="timeline-container" id="timeline">
+        <div class="timeline-progress" id="timeline-progress"></div>
+      </div>
+      <div class="controls">
+        <button id="prev"><i class="fas fa-backward"></i></button>
+        <button id="play"><i class="fas fa-play"></i></button>
+        <button id="next"><i class="fas fa-forward"></i></button>
+    </div>
+      <audio id="audio"></audio>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 # TUYU Archive
 
-> https://akashsaran.github.io/TuyuArchive/
+> [https://akashsaran.github.io/TuyuArchive/](https://akashsaran.github.io/TUYUArchive/)
 
 Due to recent controversies under the brand name, all of TUYU's songs have been deleted as of 12/31/2024. This archive hopes to preserve many of the songs that have since withered away.
 

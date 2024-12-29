@@ -1,231 +1,271 @@
 const songs = [
   {
-    name: "1. It's Raining After All",
+    name: "It's Raining After All",
     src: "songs/It's Raining After All.mp3",
     cover: "albums/It's Raining After All (Album).jpg",
     video: "videos/It's Raining After All.mp4",
+    piano: "piano/It's Raining After All (Piano) 0.mp3",
   },
   {
-    name: "2. Early Summer",
+    name: "Early Summer",
     src: "songs/Early summer.mp3",
     cover: "albums/It's Raining After All (Album).jpg",
     video: "",
+    piano: "piano/Early Summer (Piano) 0.mp3",
   },
   {
-    name: "3. Under the Summer Breeze",
+    name: "Under the Summer Breeze",
     src: "songs/Under the Summer Breeze.mp3",
-    cover: "albums/It's Raining After All (Album).jpg",
+    cover: "albums/Under The Summer Breeze.jpg",
     video: "videos/Under the Summer Breeze.mp4",
+    piano: "piano/Under the Summer Breeze (Piano) 0.mp3",
   },
   {
-    name: "4. When the Morning Glory Falls",
+    name: "When the Morning Glory Falls",
     src: "songs/When the Morning Glory Falls.mp3",
     cover: "albums/It's Raining After All (Album).jpg",
     video: "videos/When the Morning Glory Falls.mp4",
+    piano: "piano/When the Morning Glory Falls (Piano) 0.mp3",
   },
   {
-    name: "5. Loneliness and the Future",
+    name: "Loneliness and the Future",
     src: "songs/Loneliness and the Future.mp3",
     cover: "albums/It's Raining After All (Album).jpg",
     video: "videos/Loneliness and the Future.mp4",
+    piano: "piano/Loneliness And The Future (Piano) 0.mp3",
   },
   {
-    name: "6. I'm Getting on the Bus to the Other World, See Ya!",
+    name: "I'm Getting on the Bus to the Other World, See Ya!",
     src: "songs/I'm getting on the bus to the other world, see ya!.mp3",
     cover: "albums/It's Raining After All (Album).jpg",
     video: "videos/I'm getting on the bus to the other world, see ya!.mp4",
+    piano:
+      "piano/I'm getting on the bus to the other world, see ya! (Piano) 0.mp3",
   },
   {
-    name: "7. Perhaps I'll be Able to Become the Sun",
+    name: "Perhaps I'll be Able to Become the Sun",
     src: "songs/Perhaps I'll be able to become the Sun..mp3",
     cover: "albums/It's Raining After All (Album).jpg",
     video: "videos/Perhaps I'll be able to become the Sun..mp4",
+    piano: "piano/Perhaps I'll be able to become the Sun (Piano) 0.mp3",
   },
   {
-    name: "8. Envy",
+    name: "Envy",
     src: "songs/Envy.mp3",
     cover: "albums/It's Raining After All (Album).jpg",
     video: "",
+    piano: "piano/Envy (Piano) 0.mp3",
   },
   {
-    name: "9. Compared Child",
+    name: "Compared Child",
     src: "songs/Compared Child.mp3",
     cover: "albums/It's Raining After All (Album).jpg",
     video: "videos/Compared Child.mp4",
+    piano: "piano/Compared Child (Piano) 0.mp3",
   },
   {
-    name: "10. Goodbye to Rock You",
+    name: "Goodbye to Rock You",
     src: "songs/Goodbye to Rock you.mp3",
     cover: "albums/It's Raining After All (Album).jpg",
     video: "videos/Goodbye to Rock you.mp4",
+    piano: "piano/Goodbye to Rock you (Piano) 0.mp3",
   },
   {
-    name: "11. Even Tears Withered",
+    name: "Even Tears Withered",
     src: "songs/Even tears withered.mp3",
     cover: "albums/It's Raining After All (Album).jpg",
     video: "videos/Even tears withered.mp4",
+    piano: "piano/Even tears withered (Piano) 0.mp3",
   },
   {
-    name: "12. Greed",
+    name: "Greed",
     src: "songs/Greed.mp3",
     cover: "albums/I'll Put You In Misery (Album).jpg",
     video: "",
+    piano: "piano/Greed (Piano) 0.mp3",
   },
   {
-    name: "13. Dämonisch",
+    name: "Dämonisch",
     src: "songs/Dämonisch.mp3",
     cover: "albums/Dämonisch.png",
     video: "videos/Dämonisch.mp4",
+    piano: "piano/Dämonisch (Piano) 0.mp3",
   },
   {
-    name: "14. Trapped in the Past",
+    name: "Trapped in the Past",
     src: "songs/Trapped in the past.mp3",
     cover: "albums/Trapped In The Past.png",
     video: "videos/Trapped in the past.mp4",
+    piano: "piano/Trapped in the Past (Piano) 0.mp3",
   },
   {
-    name: "15. What if This Isn't a Slave?",
+    name: "What if This Isn't a Slave?",
     src: "songs/What if this isn't a slave.mp3",
     cover: "albums/What If This Isn't A Slave.jpg",
     video: "videos/What if this isn't a slave.mp4",
+    piano: "piano/What If This Isn't A Slave_ (Piano) 0.mp3",
   },
   {
-    name: "16. Loser Girl",
+    name: "Loser Girl",
     src: "songs/Loser Girl.mp3",
     cover: "albums/Loser Girl.png",
     video: "videos/Loser Girl.mp4",
+    piano: "piano/Loser Girl (Piano) 0.mp3",
   },
   {
-    name: "17. To Bask in the Rain",
+    name: "To Bask in the Rain",
     src: "songs/To bask in the rain.mp3",
     cover: "albums/Basking In The Rain.png",
     video: "videos/To bask in the rain.mp4",
+    piano: "piano/To Bask in the Rain (Piano) 0.mp3",
   },
   {
-    name: "18. Autumn Rain Front",
+    name: "Autumn Rain Front",
     src: "songs/Autumn rain front.mp3",
-    cover: "albums/I'll Put You In Misery (Album).jpg",
+    cover: "albums/Tenshi Autumn Rain Front.jpg",
     video: "",
+    piano: "piano/Autumn Rain Front (Piano) 0.mp3",
   },
   {
-    name: "19. Faithful Dog Hachi",
+    name: "Faithful Dog Hachi",
     src: "songs/Faithful dog Hachi.mp3",
     cover: "albums/Faitful Dog Hachi.png",
     video: "videos/TUYU - Faithful dog _Hachi_  MV 720.mp4",
+    piano: "piano/Faithful dog _Hachi_ (Piano) 0.mp3",
   },
   {
-    name: "20. Territory Battle",
+    name: "Territory Battle",
     src: "songs/Territory Battle.mp3",
     cover: "albums/Territory Battle.jpg",
     video: "",
+    piano: "piano/Territory Battle (Piano) 0.mp3",
   },
   {
-    name: "21. Hide and Seek Alone",
+    name: "Hide and Seek Alone",
     src: "songs/Hide and Seek Alone.mp3",
     cover: "albums/Hide And Seek Alone.png",
     video: "videos/Hide and Seek Alone.mp4",
+    piano: "piano/Hide and Seek Alone (Piano) 0.mp3",
   },
   {
-    name: "22. Being Low as Dirt, Taking What's Important From Me",
+    name: "Being Low as Dirt, Taking What's Important From Me",
     src: "songs/Being low as dirt, taking what's important from me.mp3",
     cover: "albums/Being As Low As Dirt, Taking What's Important From Me.png",
     video: "videos/Being low as dirt, taking what's important from me.mp4",
+    piano:
+      "piano/Being low as dirt, taking what's important from me (Piano) 0.mp3",
   },
   {
-    name: "23. If There Was an Endpoint",
+    name: "If There Was an Endpoint",
     src: "songs/If there was an Endpoint. (Album ver.).mp3",
     cover: "albums/If There Was An Endpoint..jpg",
     video: "videos/If there was an Endpoint..mp4",
+    piano: "piano/If There Was An Endpoint. 0.mp3",
   },
   {
-    name: "24. Under Mentality",
+    name: "Under Mentality",
     src: "songs/Under Mentality.mp3",
     cover: "albums/Under Mentality (Album) [Normal Edition].jpg",
     video: "",
+    piano: "piano/Under Mentality (Piano) 0.mp3",
   },
   {
-    name: "25. The Dissatisfaction and Discontent Disease",
+    name: "The Dissatisfaction and Discontent Disease",
     src: "songs/The Dissatisfaction and Discontent Disease.mp3",
     cover: "albums/Under Mentality (Album) [First-Press Limited Edition].jpg",
     video: "",
+    piano: "piano/The Dissatisfaction and Discontent Disease (Piano) 0.mp3",
   },
   {
-    name: "26. Under Kids",
+    name: "Under Kids",
     src: "songs/Under Kids.mp3",
     cover: "albums/Under Kids.jpg",
     video: "videos/Under Kids.mp4",
+    piano: "piano/Under Kids (Piano) 0.mp3",
   },
   {
-    name: "27. The Ravings of a Scheming Woman",
+    name: "The Ravings of a Scheming Woman",
     src: "songs/The Ravings of a Scheming Woman.mp3",
     cover: "albums/Under Mentality (Album) [First-Press Limited Edition].jpg",
     video: "",
+    piano: "piano/The Ravings of a Scheming Woman (Piano) 0.mp3",
   },
   {
-    name: "28. Under Heroine",
+    name: "Under Heroine",
     src: "songs/Under Heroine.mp3",
     cover: "albums/Under Heroine.jpg",
     video: "videos/Under Heroine.mp4",
+    piano: "piano/Under Heroine (Piano) 0.mp3",
   },
   {
-    name: "29. Would be Nice If You Grow Up One Day",
+    name: "Would be Nice If You Grow Up One Day",
     src: "songs/I Hope You Can Be an Adult Someday..mp3",
     cover: "albums/Would Be Nice If You Grow Up One Day..jpg",
     video: "videos/Would be nice if you grow up one day..mp4",
+    piano: "piano/I Hope You Can Be an Adult Someday. (Piano) 0.mp3",
   },
   {
-    name: "30. Shelter From the Rain",
+    name: "Shelter From the Rain",
     src: "songs/Shelter from the Rain.mp3",
     cover: "albums/Under Mentality (Album) [Normal Edition].jpg",
     video: "",
+    piano: "piano/Shelter from the Rain (Piano) 0.mp3",
   },
   {
-    name: "31. Overcast Skies",
+    name: "Overcast Skies",
     src: "songs/Overcast Skies.mp3",
     cover: "albums/Overcast Skies.png",
     video: "videos/Overcast Skies.mp4",
+    piano: "piano/Overcast Skies (Piano) 0.mp3",
   },
   {
-    name: "32. Rain Fall",
+    name: "Rain Fall",
     src: "songs/Rain Fall.mp3",
     cover: "albums/Rain Fall.jpg",
     video: "",
+    piano: "piano/Rain Fall (Piano) 0.mp3",
   },
   {
-    name: "33. And That’s Why I Can't Stop",
+    name: "And That’s Why I Can't Stop",
     src: "songs/And That's Why I Can't Stop!.mp3",
     cover: "albums/And That's Why I Can't Stop.jpg",
     video: "",
+    piano: "piano/And That's Why I Can't Stop! (Piano) 0.mp3",
   },
   {
-    name: "34. It Might Be Painful, But I Still Love It",
+    name: "It Might Be Painful, But I Still Love It",
     src: "songs/It Might Be Painful, But I Still Love It..mp3",
     cover: "albums/It Might Be Painful, But I Still Love It..jpg",
     video: "videos/It Might Be Painful, But I Still Love It..mp4",
+    piano: "piano/It Might Be Painful, but I Still Love It. (Piano) 0.mp3",
   },
   {
-    name: "35. The Tale of a Moonlight Night",
+    name: "The Tale of a Moonlight Night",
     src: "songs/The Tale of a Moonlight Night.mp3",
     cover: "albums/Under Mentality (Album) [Normal Edition].jpg",
     video: "",
+    piano: "piano/The Tale of a Moonlight Night (Piano) 0.mp3",
   },
   {
-    name: "36. What Sort of Ending Are You Wishing For",
+    name: "What Sort of Ending Are You Wishing For",
     src: "songs/What Sort of Ending Are You Wishing For.mp3",
     cover: "albums/What Sort Of Ending Are You Wishing For.jpg",
     video: "videos/What Sort Of Ending Are You Wishing For.mp4",
+    piano: "piano/What Sort of Ending Are You Wishing For_ (Piano) 0.mp3",
   },
   {
-    name: "37. Revolutionary Front",
+    name: "Revolutionary Front",
     src: "songs/Revolutionary Front.mp3",
     cover: "albums/Revolutionary Front.png",
     video: "videos/Revolutionary Front.mp4",
+    piano: "piano/Revolutionary Front (Piano) 0.mp3",
   },
   {
-    name: "38. It's Raining Nevertheless",
+    name: "It's Raining Nevertheless",
     src: "songs/It's Raining Nevertheless.mp3",
     cover: "albums/It's Raining Nevertheless.jpg",
     video: "videos/ツユ - それでも雨は降るんだね MV 720.mp4",
+    piano: "piano/It's Raining Nevertheless (Piano) 0.mp3",
   },
 ];
 
@@ -239,19 +279,30 @@ const randomButton = document.getElementById("random");
 const prevButton = document.getElementById("prev");
 const repeatButton = document.getElementById("repeat");
 const nextButton = document.getElementById("next");
+const pianoButton = document.getElementById("piano");
 const timeline = document.getElementById("timeline");
 const timelineProgress = document.getElementById("timeline-progress");
 
 let currentSongIndex = 0;
 let isPlaying = false;
+let isPianoMode = false;
 
 const loadSong = (index) => {
   const song = songs[index];
-  songTitle.textContent = song.name;
-  albumCover.src = song.cover;
-  audio.src = song.src;
-  backgroundVideo.src = song.video;
-  backgroundVideo.currentTime = 0;
+  if (isPianoMode) {
+    const song = songs[index];
+    songTitle.textContent = index + 1 + ". " + song.name + " (Piano)";
+    albumCover.src = "albums/Under Kids Piano Arrangement CD.png";
+    audio.src = song.piano;
+    backgroundVideo.src = "videos/It's Raining After All Rain.mp4";
+    backgroundVideo.currentTime = 0;
+  } else {
+    songTitle.textContent = index + 1 + ". " + song.name;
+    albumCover.src = song.cover;
+    audio.src = song.src;
+    backgroundVideo.src = song.video;
+    backgroundVideo.currentTime = 0;
+  }
 };
 
 const playSong = () => {
@@ -341,6 +392,14 @@ repeatButton.addEventListener("click", () => {
   backgroundVideo.currentTime = 0;
 });
 
+pianoButton.addEventListener("click", () => {
+  isPianoMode = !isPianoMode;
+  fadeOut(() => {
+    loadSong(currentSongIndex);
+    playSong();
+  });
+});
+
 timeline.addEventListener("click", seek);
 audio.addEventListener("timeupdate", updateTimeline);
 audio.addEventListener("ended", () => {
@@ -360,6 +419,7 @@ const toggleAllPlayerElements = () => {
   playButton.classList.toggle("hiddenspace");
   prevButton.classList.toggle("hiddenspace");
   nextButton.classList.toggle("hiddenspace");
+  pianoButton.classList.toggle("hiddenspace");
   player.classList.toggle("hiddenspace");
 };
 
@@ -392,6 +452,12 @@ document.addEventListener("keydown", (event) => {
   } else if (event.key === "l") {
     audio.currentTime = 0;
     backgroundVideo.currentTime = 0;
+  } else if (event.key === "p") {
+    isPianoMode = !isPianoMode;
+    fadeOut(() => {
+      loadSong(currentSongIndex);
+      playSong();
+    });
   }
 });
 

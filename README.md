@@ -26,3 +26,5 @@ C - Condensed MP3 Player
 
 H - Hide MP3 Player
 
+P - Piano Version
+

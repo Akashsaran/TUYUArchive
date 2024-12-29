@@ -273,6 +273,7 @@ const player = document.getElementById("player");
 const songTitle = document.getElementById("song-title");
 const albumCover = document.getElementById("album-cover");
 const audio = document.getElementById("audio");
+const timer = document.getElementById("timer");
 const backgroundVideo = document.getElementById("background-video");
 const playButton = document.getElementById("play");
 const randomButton = document.getElementById("random");
@@ -282,6 +283,8 @@ const nextButton = document.getElementById("next");
 const pianoButton = document.getElementById("piano");
 const timeline = document.getElementById("timeline");
 const timelineProgress = document.getElementById("timeline-progress");
+const timeContainer = document.getElementById("time-container");
+const timelineContainer = document.getElementById("timeline");
 
 let currentSongIndex = 0;
 let isPlaying = false;
@@ -292,7 +295,11 @@ const loadSong = (index) => {
   if (isPianoMode) {
     const song = songs[index];
     songTitle.textContent = index + 1 + ". " + song.name + " (Piano)";
-    albumCover.src = "albums/Under Kids Piano Arrangement CD.png";
+    if (index >= 0 && index < 11) {
+      albumCover.src = "albums/TUYU formation Cropped.jpg";
+    } else {
+      albumCover.src = "albums/Under Kids Piano Arrangement CD.png";
+    }
     audio.src = song.piano;
     backgroundVideo.src = "videos/It's Raining After All Rain.mp4";
     backgroundVideo.currentTime = 0;
@@ -411,6 +418,8 @@ loadSong(currentSongIndex);
 const togglePlayerElements = () => {
   albumCover.classList.toggle("hiddenspace");
   timeline.classList.toggle("hiddenspace");
+  timer.classList.toggle("hiddenspace");
+  timeContainer.classList.toggle("hiddenspace");
 };
 
 const toggleAllPlayerElements = () => {
@@ -421,6 +430,8 @@ const toggleAllPlayerElements = () => {
   nextButton.classList.toggle("hiddenspace");
   pianoButton.classList.toggle("hiddenspace");
   player.classList.toggle("hiddenspace");
+  timeContainer.classList.toggle("hiddenspace");
+  timer.classList.toggle("hiddenspace");
 };
 
 // Key Presses LMAO
@@ -473,3 +484,20 @@ for (let i = 0; i < counter; i++) {
 
   document.body.appendChild(hrElement);
 }
+
+function formatTime(seconds) {
+  const minutes = Math.floor(seconds / 60);
+  const secs = Math.floor(seconds % 60);
+  return `${minutes}:${secs < 10 ? "0" : ""}${secs}`;
+}
+
+function updateTimer() {
+  const currentTime = formatTime(audio.currentTime);
+  const duration = formatTime(audio.duration || 0);
+  timer.textContent = `${currentTime} / ${duration}`;
+}
+
+audio.addEventListener("timeupdate", updateTimer);
+audio.addEventListener("loadedmetadata", updateTimer);
+
+updateTimer();

@@ -37,18 +37,23 @@
       <div class="song-header" id ="header">
       <div class="song-title" id="song-title">Song Name</div>
     </div>
+    <div class="album-overlay">
       <img
         src="placeholder.jpg"
         alt="Album Cover"
         class="album-cover"
         id="album-cover"
       />
-      <div class="timeline-container" id="timeline">
-        <div class="timeline-progress" id="timeline-progress"></div>
-      </div>
+    </div>
+    <div class="time-container" id="time-container">
+    <div class="timeline-container" id="timeline">
+      <div class="timeline-progress" id="timeline-progress"></div>
+    </div>
+    <div class="timer" id="timer">0:00 / 0:00</div>
+  </div>
       <div class="controls">
         <button id="prev" data-tooltip="[<] Go to The Previous Song"><i class="fas fa-backward"></i></button>
-        <button id="random" data-tooltip="[R] Play a Random Song"><i class="fa-solid fa-repeat"></i></button>
+        <button id="random" data-tooltip="[R] Play a Random Song"><i class="fa-solid fa-shuffle"></i></button>
         <button id="play" data-tooltip="[Space] Play/Pause the Song"><i class="fas fa-play"></i></button>
         <button id="repeat" data-tooltip="[L] Repeat the Current Song"><i class="fa-solid fa-rotate-right"></i></button>
         <button id="next" data-tooltip="[>] Go to the Next Song"><i class="fas fa-forward"></i></button>
